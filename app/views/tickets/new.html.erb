@@ -1,0 +1,18 @@
+<div id="ticketcontainer">
+
+<%= form_for @ticket do |t|%>
+
+<p>
+	<%= t.label :number, 'Number'%>
+	<%= t.text_field :number %>
+</p>
+
+<p>
+	<%=collection_select(:ticket, :drawing_id, Drawing.all, :id, :to_s, prompt: true) %>
+</p>
+
+<p>
+	<%= t.submit %>
+</p>
+
+<%end%>

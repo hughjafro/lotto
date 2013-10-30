@@ -1,0 +1,156 @@
+@import 'bootstrap';
+
+.container {
+	margin: 0 auto;
+	/*margin-right: 0;
+	margin-left: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+body {
+	background: transparent url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexqIrES5bUnEDzq7Lhy9QwociAARtF_bVztzCYHpa7VQ-CA6JuQ") no-repeat;
+	background-size: 100%;
+   /*background-image: url('beachHD.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	font-family: 'proxima_nova_rgbold', Helvetica, Arial;
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#page-wrapper {
+   position: relative;
+   width: 100%;
+   /* centers the document */
+   margin: 0 auto;
+   /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+   overflow: hidden;
+   height: 1000px;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+
+h1 {
+	font-family: 'proxima_nova_rgbold', Helvetica, Arial;
+	font-size: 60px;
+	text-align: center;
+}
+
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+/* #absolute-wrapper .image {
+   width: 891px;
+   height: 587px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background: transparent url("http://www.bourneabbey.lincs.sch.uk/_files/images/General/Logos/lotteryballs.jpg") top left no-repeat;
+   background-size: 100% 100%;
+ }*/
+ #absolute-wrapper .image select {
+   width: 81px;
+   height: 25px;
+   position: absolute;
+   top: 102px;
+ }
+ #absolute-wrapper .image select.select-1 {
+   left: 306px;
+ }
+ #absolute-wrapper .image select.select-2 {
+   left: 205px;
+ }
+ #absolute-wrapper .image div.div-1 {
+   background: #ffffff;
+   border: 5px solid #ffc300;
+   border-radius: 50px;
+   width: 90px;
+   height: 90px;
+ }
+ #absolute-wrapper .image div {
+   position: absolute;
+ }
+ #absolute-wrapper .image div.div-2 {
+   top: 236px;
+ }
+ #absolute-wrapper .image div.div-3 {
+   top: 237px;
+ }
+ #absolute-wrapper .image div.div-4 {
+   left: 214px;
+ }
+ #absolute-wrapper .image .div-1.div-2.div-5 {
+   left: 501px;
+ }
+ #absolute-wrapper .image .div-1.div-2.div-6 {
+   left: 310px;
+ }
+ #absolute-wrapper .image .div-1.div-2.div-7 {
+   left: 405px;
+ }
+ #absolute-wrapper .image .div-1.div-3.div-8 {
+   left: 696px;
+ }
+ #absolute-wrapper .image .div-1.div-3.div-9 {
+   left: 600px;
+ }
+ #absolute-wrapper .image textarea {
+   width: 206px;
+   height: 44px;
+   position: absolute;
+   top: 349px;
+   left: 389px;
+ }
+ #absolute-wrapper .image .btn-success {
+   border-right: 1px solid rgba(0, 0, 0, 0);
+   border-bottom: 1px solid rgba(0, 0, 0, 0);
+   border-left: 1px solid rgba(0, 0, 0, 0);
+   background: #62c462;
+   background-image: -moz-linear-gradient(270deg, #62c462 0%, #51a351 100%);
+   background-image: -webkit-linear-gradient(270deg, #62c462 0%, #51a351 100%);
+   background-image: -o-linear-gradient(270deg, #62c462 0%, #51a351 100%);
+   background-image: linear-gradient(180deg, #62c462 0%, #51a351 100%);
+   width: 72px;
+   height: 30px;
+   position: absolute;
+   top: 359px;
+   left: 659px;
+ }
+ #absolute-wrapper .image .form-actions {
+   border: none;
+   width: 136px;
+   height: 23px;
+   top: 433px;
+   left: 416px;
+ }
+ #absolute-wrapper .navbar {
+   width: 940px;
+   height: 42px;
+   position: absolute;
+   top: 2px;
+   left: 45px;
+   /*opacity: .3;*/
+ }
+ #absolute-wrapper .navbar .navbar-inner {
+   height: 42px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ #absolute-wrapper .navbar .responsive-container .brand.brand-1 {
+   color: #b51919;
+ }
+ #absolute-wrapper .navbar .responsive-container strike u em strong .brand.editing-element.brand-1 .cke_editable.cke_editable_inline.cke_contents_ltr {
+   outline: none;
+ }

@@ -1,0 +1,18 @@
+<div id="drawingcontainer">
+
+<%= form_for @drawing do |d|%>
+
+<p>
+	<%= d.label :date, 'Date'%>
+	<%= d.text_field :date %>
+</p>
+
+<p>
+	<%=collection_select(:drawing, :game_id, Game.all, :id, :name, prompt: 'Randy knows all the best numbers') %>
+</p>
+
+<p>
+	<%= d.submit %>
+</p>
+
+<%end%>
