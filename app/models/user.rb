@@ -19,6 +19,15 @@ class User
 
 	has_many :tickets
 
+	#This will tell sus what regions to show on the map
+	# has_and_belongs_to_many :ugroups, class_name: "Group",
+	# inverse_of: :gusers
+
+	# has_and_belongs_to_many :ugroups, class_name: "Event",
+	# inverse_of: :gusers
+
+	has_many :scores
+
 	#Before you create a user, call the hash_password
 	before_save :hash_password
 	validates :firstName, presence: true

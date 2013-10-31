@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
 
+
+	def index
+		@users = User.all #find_by(:user_id => current_user.id)
+	end
+
 	def new
 		@user = User.new
 	end

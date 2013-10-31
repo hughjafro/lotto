@@ -3,10 +3,14 @@ Lotto::Application.routes.draw do
 root to: 'tickets#index'
 
 resources :drawings
-  
+# resources :users
+
+get 'users' => 'users#index'
 get 'users/new' => 'users#new'
-# get 'users/:id' => 'users#show'
+get 'users/:id' => 'users#show'
 post 'users' => 'users#create'
+
+delete 'users/:id/edit' => 'users#edit'
 
 get 'authentications/new' => 'authentications#new'
 post 'authentications' => 'authentications#create'
