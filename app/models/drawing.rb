@@ -10,7 +10,11 @@ class Drawing
 
 	#create a method to concantenate the crazy #'s of the id tag into a string for the ticket drop down menu
 	def to_s
-		self.game.name + ' - ' + self.date
+		if self.game
+			self.game.name + ' - ' + self.date
+		else
+			"<unknown> - " + self.date
+		end
 	end
 
 end

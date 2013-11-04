@@ -15,6 +15,8 @@ delete 'users/:id/edit' => 'users#edit'
 get 'authentications/new' => 'authentications#new'
 post 'authentications' => 'authentications#create'
 
+delete 'authentications/:id' => 'authentications#destroy'
+
 resources :tickets
 # get 'tickets' => 'tickets#index'
 

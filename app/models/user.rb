@@ -5,14 +5,14 @@ class User
 
 	attr_accessor :password, :password_confirmation
 
-	field :firstName, type: String
-	field :lastName, type: String
-	field :fullName, type: String
+	field :first_name, type: String
+	field :last_name, type: String
+	field :full_name, type: String
 	field :phone, type: String
 	field :email, type: String
 	field :salt, type: String	
 	field :hashed_password, type: String
-	field :userNums, type: Integer #This will be an array of 6 numbers
+	field :user_nums, type: Integer #This will be an array of 6 numbers
 	field :state, type: String
 	field :game, type: String
 
@@ -30,8 +30,8 @@ class User
 
 	#Before you create a user, call the hash_password
 	before_save :hash_password
-	validates :firstName, presence: true
-	validates :lastName, presence: true
+	validates :first_name, presence: true
+	validates :last_name, presence: true
 	validates :email, presence: true
 	validates :email, uniqueness: { case_sensitive: false }
 	validates :password, confirmation: true

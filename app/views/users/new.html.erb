@@ -4,13 +4,13 @@
 <%= form_for @user do |user| %>
 
 <p>
-	<%= user.label :firstName, "First Name"%><br />
-	<%= user.text_field :firstName, placeholder: "First Name" %>
+	<%= user.label :first_name, "First Name"%><br />
+	<%= user.text_field :first_name, placeholder: "First Name" %>
 </p>
 
 <p>
-	<%= user.label :lastName, "Last Name"%><br />
-	<%= user.text_field :lastName, placeholder: "Last Name" %>
+	<%= user.label :last_name, "Last Name"%><br />
+	<%= user.text_field :last_name, placeholder: "Last Name" %>
 </p>
 <p>
 	<%= user.label :email, "Email"%><br />
@@ -34,5 +34,5 @@
 <%end%>
 
 <hr />
-User id: <%= session[:user_id] %>
+<!-- User id: <%= session[:user_id] %> -->
 </div>

@@ -9,8 +9,8 @@ class TicketsController < ApplicationController
 	end
 
 	def create
-		# @ticket = Ticket.create(params[:ticket].permit(:number, :numberBig. :date))
-		# redirect_to tickets_url
+		@ticket = Ticket.create(params.require(:ticket).permit(:number, :numberBig, :date))
+		redirect_to tickets_url
 	end
 
 	# def save

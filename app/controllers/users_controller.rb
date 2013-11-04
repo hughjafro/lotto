@@ -11,8 +11,8 @@ class UsersController < ApplicationController
 
 
 	def create
-		@user = User.create(params[:user].permit(:email, :password, :password_confirmation))
-		redirect_to users_url #:action => "show", :id =>@user._id
+		@user = User.create(params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation))
+		redirect_to tickets_url #:action => "show", :id =>@user._id
 	end
 
 	# def save

@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default" id="navnav" role="navigation">
 	  <!-- Brand and toggle get grouped for better mobile display -->
 	  <div class="navbar-header">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -23,7 +23,11 @@
 	  <div class="collapse navbar-collapse navbar-ex1-collapse">
 	    <ul class="nav navbar-nav">
 	      <li class="active"><a href="/authentications/new">Login</a></li>
+	      <li> <% if current_user %>
+				<%= link_to "Log out", "/authentications/x", :method => :delete %> <%end%>
+			</li>
 	      <li><a href="/users/new">Sign Up</a></li>
+	      <li><a href="/tickets/new">New Ticket</a></li>
 	      <!-- <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
@@ -42,9 +46,9 @@
 	      <button type="submit" class="btn btn-default">Submit</button>
 	    </form> -->
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#">Links</a></li>
+	      
 	      <li>
-	        <a href="#">Account</a>
+	        <a href="/tickets/new">Account</a>
 	        <!-- <ul class="dropdown-menu">
 	          <li><a href="#">Action</a></li>
 	          <li><a href="#">Another action</a></li>

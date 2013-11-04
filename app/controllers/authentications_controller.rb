@@ -17,12 +17,17 @@ class AuthenticationsController < ApplicationController
 			# authenticate user
 			if user.authenticate(params[:user][:password])
 				session[:user_id] = user.id
-				redirect_to users_url
+				redirect_to tickets_url
 			else
 				flash.now.alert = "Unabe to sign you in. Please retry your login information."
 				render :new
 			end
 		end
+	end
+
+	def destroy
+		session[:user_id] = nil
+		redirect_to tickets_url
 	end
 
  
